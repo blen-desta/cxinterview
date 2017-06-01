@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.SCHEMA:postgres.interview</OriginalElement>
+  <nodes>
+    <node x="559.5" y="432.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.emp_referral</node>
+    <node x="1064.25" y="410.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_question_notes</node>
+    <node x="830.25" y="254.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.employee</node>
+    <node x="0.0" y="44.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.refertype</node>
+    <node x="206.25" y="243.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_school</node>
+    <node x="25.25" y="254.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_refertype</node>
+    <node x="1579.125" y="254.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.level</node>
+    <node x="1333.8796296296296" y="432.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_category</node>
+    <node x="1107.75" y="44.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.sessiontype</node>
+    <node x="1529.6527777777778" y="432.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_level</node>
+    <node x="1030.0" y="221.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session</node>
+    <node x="1257.125" y="254.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.category</node>
+    <node x="846.25" y="421.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_notes</node>
+    <node x="609.25" y="232.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_job</node>
+    <node x="407.25000000000006" y="243.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_notes</node>
+    <node x="442.75" y="0.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate</node>
+    <node x="1408.125" y="243.0">e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session">
+      <point x="49.5" y="-47.5" />
+      <point x="994.75" y="390.0" />
+      <point x="1077.75" y="390.0" />
+      <point x="-47.75" y="69.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="-47.75" y="-69.5" />
+      <point x="1077.75" y="181.0" />
+      <point x="636.1666666666666" y="181.0" />
+      <point x="87.91666666666663" y="80.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.emp_referral" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="-39.25" y="-36.5" />
+      <point x="598.75" y="201.0" />
+      <point x="565.8333333333334" y="201.0" />
+      <point x="17.58333333333337" y="80.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_category" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question">
+      <point x="36.5" y="-36.5" />
+      <point x="1443.3796296296296" y="390.0" />
+      <point x="1483.625" y="390.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="-5.6843418860808015E-14" y="-47.5" />
+      <point x="497.75" y="201.0" />
+      <point x="530.6666666666666" y="201.0" />
+      <point x="-17.58333333333337" y="80.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.employee">
+      <point x="-49.5" y="-47.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.emp_referral" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.employee">
+      <point x="39.25" y="-36.5" />
+      <point x="677.25" y="390.0" />
+      <point x="852.0833333333335" y="390.0" />
+      <point x="-43.66666666666663" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_level" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question">
+      <point x="-32.75" y="-36.5" />
+      <point x="1562.4027777777778" y="390.0" />
+      <point x="1533.9583333333333" y="390.0" />
+      <point x="50.33333333333326" y="47.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_school" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="0.0" y="-47.5" />
+      <point x="296.75" y="191.0" />
+      <point x="495.5" y="191.0" />
+      <point x="-52.75" y="80.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.sessiontype">
+      <point x="47.75" y="-69.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_category" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.category">
+      <point x="-36.5" y="-36.5" />
+      <point x="1370.3796296296296" y="380.0" />
+      <point x="1322.625" y="380.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_question_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session">
+      <point x="0.0" y="-58.5" />
+      <point x="47.75" y="69.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question_level" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.level">
+      <point x="32.75" y="-36.5" />
+      <point x="1627.9027777777778" y="390.0" />
+      <point x="1644.625" y="390.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_question_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question">
+      <point x="72.66666666666674" y="-58.5" />
+      <point x="1245.9166666666667" y="390.0" />
+      <point x="1433.2916666666667" y="390.0" />
+      <point x="-50.33333333333326" y="47.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_refertype" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.refertype">
+      <point x="-40.25" y="-36.5" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.session_question_notes" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.employee">
+      <point x="-72.66666666666674" y="-58.5" />
+      <point x="1100.5833333333333" y="380.0" />
+      <point x="939.4166666666667" y="380.0" />
+      <point x="43.66666666666663" y="36.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_job" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="0.0" y="-58.5" />
+      <point x="709.75" y="191.0" />
+      <point x="601.0" y="191.0" />
+      <point x="52.75" y="80.5" />
+    </edge>
+    <edge source="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.cand_refertype" target="e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.candidate">
+      <point x="40.25" y="-36.5" />
+      <point x="146.0" y="181.0" />
+      <point x="460.33333333333337" y="181.0" />
+      <point x="-87.91666666666663" y="80.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6891969959560947" x="855.5" y="263.5" />
+  <SelectedNodes>
+    <node>e9667dd5-1286-4b6f-961f-3a6e66b8d2ca.TABLE:postgres.interview.question</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
