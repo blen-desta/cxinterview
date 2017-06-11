@@ -77,7 +77,7 @@ CREATE TABLE INTERVIEW.cand_school (
   school    VARCHAR(255) NOT NULL,
   grad_date DATE,
 
-  PRIMARY KEY (cand_id, school)
+  PRIMARY KEY (cand_id, school, grad_date)
 );
 
 CREATE TABLE INTERVIEW.cand_job (
