@@ -12,7 +12,10 @@ backend. It is currently implemented to work against a Postgresql database.
 
 To setup the dev environment, the engineer should install Postgresql locally,
 with a database `postgres` and a user `interview` with password `interview`
-and all grants against the `postgres` database.
+and all grants against the `postgres` database. Once the Postgresql instance
+is prepared, the DDL defined in [ddl.sql](https://github.com/coyotesqrl/cxinterview/blob/master/codegen/src/main/resources/ddl.sql)
+should be executed against it. At that point, pre-setup is complete and the
+project can be built.
 
 Future refinements may allow for pluggable databases (to support in-memory
 DBs for development). Future refinements will support parametrized connection
