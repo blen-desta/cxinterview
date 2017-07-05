@@ -100,5 +100,6 @@
         <module>codegen</module>
         <module>dao</module>
         <module>graphql</module>
+        <module>server</module>
     </modules>
 </project>
