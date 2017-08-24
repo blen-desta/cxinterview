@@ -12,6 +12,7 @@ data class Category(override val id: Int, val name: String) : IdObject
 data class Level(override val id: Int, val name: String) : IdObject
 
 data class Question(override val id: Int,
+                    val title: String,
                     val text: String,
                     val notes: String,
                     val level: Level,
@@ -92,6 +93,7 @@ fun Question.create(): Question {
         val record = ctx.newRecord(QUESTION)
         // Create the Question record
         with(record) {
+            title = this@create.title
             qtext = this@create.text
             qnotes = this@create.notes
             store()
@@ -112,6 +114,7 @@ fun Question.update(): Question {
     return useConnection { ctx ->
         // Update the question record
         ctx.update(QUESTION)
+                .set(QUESTION.TITLE, this@update.title)
                 .set(QUESTION.QTEXT, this@update.text)
                 .set(QUESTION.QNOTES, this@update.notes)
                 .where(QUESTION.ID.eq(this@update.id))

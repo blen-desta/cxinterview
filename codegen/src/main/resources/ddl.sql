@@ -26,6 +26,7 @@ INSERT INTO INTERVIEW.level (name) VALUES ('SENIOR');
 
 CREATE TABLE INTERVIEW.question (
   id     SERIAL UNIQUE PRIMARY KEY,
+  title  VARCHAR(128) NOT NULL,
   qtext  TEXT NOT NULL,
   qnotes TEXT
 );
