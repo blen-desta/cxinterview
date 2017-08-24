@@ -29,6 +29,7 @@ enum SessionType {
 
 type Question {
   id: Int!
+  title: String!
   text: String!
   notes: String
   levels: [QuestionLevel!]
