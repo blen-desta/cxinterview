@@ -11,6 +11,7 @@ data class Category(override val id: Int, val name: String) : IdObject
 
 data class Level(override val id: Int, val name: String) : IdObject
 
+//Todo: destab - 02/08/2018 - Would be nice to have a list of levels instead
 data class Question(override val id: Int,
                     val title: String,
                     val text: String,

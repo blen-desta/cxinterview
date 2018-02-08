@@ -1,0 +1,108 @@
+enum QuestionCategory {
+    DEVOPS
+    FRONTEND
+    BACKEND
+}
+
+enum QuestionLevel {
+    NEWGRAD
+    JUNIOR
+    SENIOR
+}
+
+enum ReferType {
+    EMPLOYEE
+    RECRUITER
+    ASUCAREER
+    UACAREER
+}
+
+enum SessionType {
+    EMPLOYEE
+    ASUCAREER
+    UACAREER
+}
+
+type Question {
+    id: Int!
+    title: String!
+    text: String!
+    notes: String
+    level: QuestionLevel!
+    categories: [QuestionCategory!]
+}
+
+type Candidate{
+    id: Int!
+    name: String!
+    email: String!
+    phone: String!
+    yearsExperience: Int!
+    interviewSessions: Interview!
+    employeeReferrals: Employee!
+    referralType: ReferType
+    schools: School!
+    previousJobs: Job!
+    generalNotes: CandidateNote!
+}
+
+type Employee {
+    id: Int!
+    username: String!
+}
+
+type School {
+    school: String!
+    gradDate: Date!
+}
+
+type Job {
+    employer: String!
+    startDate: Date!
+    endDate: Date!
+}
+
+type Interview {
+    id: Int!
+    sessionType: SessionType!
+    employeeNotes: EmployeeNotes!
+    questionsAsked: QuestionNotes!
+    recommendation: String
+}
+
+type EmployeeNotes {
+    id: Int!
+    employee: Employee!
+    notes: String
+}
+
+type QuestionNotes{
+    id: Int!
+    question: Question!
+    employee: Employee!
+    notes: String
+}
+
+type CandidateNote {
+    employee: Employee!
+    date: Date!
+    notes: String!
+}
+
+scalar Date
+
+type Query {
+    question(id: Int, level: QuestionLevel, category: QuestionCategory): [Question!]
+    allQuestions: [Question!]
+    employee(firstName: String!): [Employee!]
+    allEmployees: [Employee!]
+    candidate(name: String, email: String, referredBy: String, referType: ReferType, school: String, job: String, interviewDate: Date):[Candidate!]
+    allCandidates: [Candidate!]
+}
+
+type Mutation {
+    createQuestion(id: Int!, title: String, text: String!, notes: String, level: QuestionLevel!, categories: [QuestionCategory!]) : String
+    updateQuestion(id: Int!, title: String, text: String!, notes: String, level: QuestionLevel!, categories: [QuestionCategory!]) : String
+    createEmployee(id: Int!, username: String!) : String
+    updateEmployee(id: Int!, username: String!) : String
+}

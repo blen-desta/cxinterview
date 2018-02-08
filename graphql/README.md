@@ -46,7 +46,7 @@ type School {
 }
 
 type Job {
-  name: String!
+  employer: String!
   startDate: Date!
   endDate: Date!
 }
